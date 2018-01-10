@@ -164,25 +164,7 @@ A_means$Aclusters<-x$cluster
 length(which(clusterA$clusternumber==0))
 
 
-
 xclusters$similar<-NA
-
-#put all accounts with the same clusternumber into one cell for each account
-#under column similar
-for (x in 1:nrow(xclusters)) {
-  data[x,"similar"]<-as.list(xclusters[grep(data[x,"clusternumber"],xclusters$clusternumber),1])
-  x=x+1
-}
-row.names(clusterA[clusterA[,4]==1,])
-
-#list segments these similar accounts have (for cross sell )
-xclusters$othersegments <-NA
-for (x in 1:nrow(xclusters))
-
-
-  
-#Show the layered graphs of the selected account's longitudinal data and it's similar accounts' data
-
 
 
 
